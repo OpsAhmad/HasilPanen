@@ -1,0 +1,22 @@
+body{
+    /* background: url('../assets/background-one.png'); */
+    background-color: sandybrown;
+    background-size:100%;
+    margin: 0;
+    padding: 0 ;
+}
+
+.navbar{
+    background-color: rgb(49, 57, 57);
+}
+.navbar img{
+    width:3em;
+}
+
+@media (min-width: 400px){
+    body{background-color: salmon;
+}}
+
+@media (min-width: 768px){
+    body{background-color: rgb(255, 0, 0);
+}}

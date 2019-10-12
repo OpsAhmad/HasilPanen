@@ -1,0 +1,198 @@
+body {
+  height: 100vh;
+  margin: 0;
+  overflow: hidden;
+  font-family: Arial, Helvetica, sans-serif;
+  background: url(../assets/background-one.png);
+  background-size: 100%;
+ 
+}
+
+body p {
+  color: #5B5E6F;
+  font-size: 10px;
+  text-align: left;
+}
+
+
+body .login {
+  opacity: 1;
+  top: 20px;
+  -webkit-transition-timing-function: cubic-bezier(0.68, -0.25, 0.265, 0.85);
+  transition-property: opacity,box-shadow,top,left,-webkit-transform;
+  transition-property: transform,opacity,box-shadow,top,left;
+  transition-property: transform,opacity,box-shadow,top,left,-webkit-transform;
+  transition-duration: .5s;
+  -webkit-transform-origin: 161px 100%;
+          transform-origin: 161px 100%;
+  -webkit-transform: rotateX(0deg);
+          transform: rotateX(0deg);
+  position: relative;
+  width: 240px;
+
+  height: 300px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: auto;
+  top: 0;
+  bottom: 0;
+  padding: 100px 40px 40px 40px;
+  background: rgba(47, 55, 55, 255);
+ 
+}
+body .login .validation {
+  position: absolute;
+  z-index: 1;
+  right: 10px;
+  top: 6px;
+  opacity: 0;
+}
+body .login .disclaimer {
+  position: absolute;
+  bottom: 20px;
+  left: 35px;
+  width: 250px;
+}
+body .login_title {
+  color: #afb1be;
+  height: 60px;
+  text-align: left;
+  font-size: 16px;
+}
+body .login_fields {
+  height: 208px;
+  position: absolute;
+  left: 0;
+}
+body .login_fields .icon {
+  position: absolute;
+  z-index: 1;
+  left: 36px;
+  top: 8px;
+  opacity: .5;
+}
+/* body .login_fields input[type='password'] {
+  color: rgb(189, 31, 70) !important;
+} */
+body .login_fields input[type='text'], body .login_fields input[type='password'] {
+  color: #afb1be;
+  width: 190px;
+  margin-top: -2px;
+  background: rgb(57, 72, 72);
+  left: 0;
+  padding: 10px 65px;
+  border-top: 2px solid rgb(62, 81, 81);
+  border-bottom: 2px solid rgb(62, 81, 81);
+  border-right: none;
+  border-left: none;
+  outline: none;
+  font-family: 'Gudea', sans-serif;
+  box-shadow: none;
+}
+body .login_fields__user, body .login_fields__password {
+  position: relative;
+}
+body .login_fields__submit {
+  position: relative;
+  top: 35px;
+  left: 0;
+  width: 80%;
+  right: 0;
+  margin: auto;
+}
+body .login_fields__submit .forgot {
+  float: right;
+  font-size: 10px;
+  margin-top: 11px;
+  text-decoration: underline;
+}
+body .login_fields__submit .forgot a {
+  color: #606479;
+}
+body .login_fields__submit input {
+  border-radius: 50px;
+  background: transparent;
+  padding: 10px 40px;
+  border: 2px solid rgb(0, 152, 54);
+  color: rgb(0, 152, 54);
+  text-transform: uppercase;
+  font-size: 11px;
+  transition-property: background,color;
+  transition-duration: .2s;
+}
+body .login_fields__submit input:focus {
+  box-shadow: none;
+  outline: none;
+}
+body .login_fields__submit input:hover {
+  color: white;
+  background: rgb(0, 152, 54);
+  cursor: pointer;
+  transition-property: background,color;
+  transition-duration: .2s;
+}
+
+.checkbox{
+    padding: 0.5em 2.4em;
+    color: #96969b;
+    background-color: transparent;
+    font-size: 15px;
+    
+}
+
+.checkbox label{
+    position: relative;
+    cursor: pointer;
+    padding: 0;
+}
+
+.styled-checkbox{
+    position: absolute;
+    opacity: 0;
+   
+  }
+  .styled-checkbox + label {
+    position: relative;
+    cursor: pointer;
+    padding: 0;
+  }
+  .styled-checkbox + label:before {
+    content: '';
+    margin-right: 10px;
+    display: inline-block;
+    vertical-align: text-top;
+    width: 15px;
+    height: 15px;
+    background: rgb(2, 167, 59);
+  }
+  .styled-checkbox:hover + label:before {
+    background: rgb(0, 152, 54);
+  }
+  .styled-checkbox:focus + label:before {
+    box-shadow: 0 0 0 3px rgba(0, 0, 0, 0.12);
+  }
+  .styled-checkbox:checked + label:before {
+    background: rgb(0, 152, 54);
+  }
+  .styled-checkbox:disabled + label {
+    color: #b8b8b8;
+    cursor: auto;
+  }
+  .styled-checkbox:disabled + label:before {
+    box-shadow: none;
+    background: #ddd;
+  }
+  .styled-checkbox:checked + label:after {
+    content: '';
+    position: absolute;
+    left: 3px;
+    top: 6px;
+    background: white;
+    width: 2px;
+    height: 2px;
+    box-shadow: 2px 0 0 white, 4px 0 0 white, 4px -2px 0 white, 4px -4px 0 white, 4px -6px 0 white, 4px -8px 0 white;
+    -webkit-transform: rotate(45deg);
+            transform: rotate(45deg);
+  }
+
