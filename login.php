@@ -28,7 +28,9 @@ if (isset($_POST["login"])) {
 	$username = $_POST["username"];
 	$password = $_POST["password"];
 
-	$result = mysqli_query($conn, "SELECT * FROM user WHERE username = '$username'");
+  $result = mysqli_query($conn, "SELECT * FROM user WHERE username = '$username'");
+  
+  
 
 // cek username
 	if (mysqli_num_rows($result) === 1) {
@@ -39,7 +41,8 @@ if (isset($_POST["login"])) {
 			// set session
       $_SESSION["login"] = true;
       setcookie('id',$row['id']);
-		  setcookie('username', $row['username']);
+      setcookie('username', $row['username']);
+      setcookie('email', $row['email']);
       header("Location: index.php");
 			// cek remember me
 			// if( isset($_POST['remember'])){

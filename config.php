@@ -2,6 +2,12 @@
 // koneksi ke database
 $conn = mysqli_connect("localhost", "root", "", "hasilpanen");
 
+$db = mysqli_connect("localhost", "root", "", "hasilpanen");
+
+if( !$db ){
+    die("Gagal terhubung dengan database: " . mysqli_connect_error());
+}
+
 
 function signup($data){
 	global $conn;
@@ -21,19 +27,13 @@ function signup($data){
         
     }
     
-    	
 
-        
-
-
-	
-
-	// enkripsi password
 	$password = password_hash($password, PASSWORD_DEFAULT);
 
-	// tambahkan userbaru ke database
+
 	mysqli_query($conn, "INSERT INTO user VALUES ('','$username','$name','$email','$password')");
 	return mysqli_affected_rows($conn);
 
 }
  ?>
+

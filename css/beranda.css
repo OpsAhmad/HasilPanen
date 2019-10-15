@@ -1,22 +1,554 @@
 body{
-    /* background: url('../assets/background-one.png'); */
-    background-color: sandybrown;
+    background-color: rgb(33, 33, 33);
     background-size:100%;
     margin: 0;
     padding: 0 ;
 }
 
+section,li,ul,.card {
+    background: rgb(33, 33, 33);
+}
+/*navbar*/
 .navbar{
-    background-color: rgb(49, 57, 57);
+    background-color: rgba(49, 57, 57, 0.692);
+    text-align: center;
+    position: fixed  ;
+    width: 100%;
 }
-.navbar img{
-    width:3em;
+.logo{
+    width:60px;
+    float: left;
+    padding: 0 0 0 0px;
 }
 
-@media (min-width: 400px){
-    body{background-color: salmon;
-}}
+/*biar jejer*/
+.navbar img, .navbar .wrap{
+    display: inline-block;
+}  
+.wrap{
+    width: 50%;
+    padding:10px 0px 10px 0px;
+}
 
-@media (min-width: 768px){
-    body{background-color: rgb(255, 0, 0);
-}}
+/*search bar*/
+.search {
+    width: 100%;
+    position: relative;
+    display: inline-flex ;
+  }
+
+  .searchTerm {
+    background-color: rgba(93, 97, 97, 0.774);
+    width: 100%;
+    border: none;
+    padding: 5px;
+    height: 30px;
+    border-radius: 5px 0 0 5px;
+    outline: none;
+    color: rgb(255, 255, 255);
+  }
+  .searchButton {
+  width: 40px;
+  height: 40px;
+  background: url('../assets/search-bar.png');
+  background-size: 40px;
+  text-align: center;
+  border-radius: 0 5px 5px 0;
+  cursor: pointer;
+  font-size: 20px;
+  border: none;
+}
+.profilebtn{
+    float: right;
+    width: 34px;
+    padding: 10px 10px 10px 10px;
+  }
+
+  .profilebtn:hover{
+    background: rgba(33, 33, 33, 0.589);
+  }
+
+/*navbar end*/
+
+/*banner*/
+.banner-big img{
+ width: 100%;
+}
+
+.banner-small img{
+    width: 100%;
+   }
+
+   /*promosi */
+   .promosi-area  {
+    padding-top: 1em;
+    text-align: center;
+  }
+  
+  .promosi-area ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+  }
+  
+  .promosi-area li{
+    margin-bottom: 1em;
+    background: transparent;
+    color: #333333;
+    text-align: center;
+  }
+  
+  .card-content{
+    padding: 1.5em;
+    background-color: transparent;
+    color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+  }
+
+  .card-content-2{
+    padding: 1em 0 1em 0;
+    background-color: rgb(0,152,65);
+    text-align: center;
+    width: 100%;
+  }
+
+
+  .card-content img{
+      width: 120px;
+  }
+
+  .card-content img, .card-content h2,{
+        display: inline-block;
+  }
+ .card-content-2 .harga-promo, .card-content-2 .tombol-beli-promo{
+      display: inline-block;
+  }
+
+  .harga-promo{
+      color: #fff;
+      font-family: Arial, Helvetica, sans-serif;
+      width: 100%;
+      text-align: center;
+  }
+
+  .tombol-beli-promo{
+      text-decoration: none;
+      color: white;
+      border: 2px solid #fff;
+      padding: 1em 0.5em;
+        float: inherit;
+        border-radius: 50px;
+        font-family: Arial, Helvetica, sans-serif;
+        width: 50%;
+        text-align: center;
+  }
+
+  .tombol-beli-promo:hover{
+    border: 2px solid transparent;
+    color: rgb(0,152,65);
+    background: rgb(255, 255, 255);
+  }
+  /*promosi done*/
+
+  /*kategori*/
+section{
+  width: 100%;
+}
+
+  .card{
+    width: 100%;
+    
+  }
+
+  .category-tittle{
+      text-align: center;
+      color: #fff;
+      font-family: Arial, Helvetica, sans-serif;
+  }
+
+     /*kategori */
+     .macam-kategori  {
+        padding:  0em 0em 0em;
+        overflow: hidden;
+      }
+      
+      .macam-kategori ul{
+        list-style: none;
+        margin: 0;
+        padding: 0;
+      }
+      
+      .macam-kategori li{
+        margin-bottom: 0;
+        background: #fff;
+        color: #333333;
+      }
+
+      .card-content-3{
+          background: url('../assets/pertanianbg.png');
+          background-size: 100%;
+          opacity: 50%;
+          height: 400px;
+          width: 100%;
+          text-align: center;
+          opacity: 2%;
+          margin: 0 0 0 0;
+      }
+      
+      .card-content-4{
+        background: url('../assets/perkebunanbg.png');
+        background-size: 100%;
+        opacity: 50%;
+        height: 400px;
+        width: 100%;
+        text-align: center;
+        margin: 0 0 0 0;
+    }
+    
+    .card-content-5{
+        background: url('../assets/peternakanbg.png');
+        background-size: 100%;
+        opacity: 50%;
+        height: 400px;
+        width: 100%;
+        text-align: center;
+        margin: 0 0 0 0;
+    }
+    
+    .card-content-6{
+        background: url('../assets/perikananbg.png');
+        background-size: 100%;
+        opacity: 50%;
+        height: 400px;
+        width: 100%;
+        text-align: center;
+        margin: 0 0 0 0;
+    }
+
+    .gopertanian,.gopeternakan,.goperkebunan,.goperikanan{
+      text-decoration: none;
+    }
+  
+
+      .card-content-3:hover,
+      .card-content-4:hover ,
+      .card-content-5:hover ,
+      .card-content-6:hover {
+         -webkit-animation-name: kategori ;
+         -webkit-animation-duration: 0.5s;
+         animation-name: kategori;
+         animation-duration: 1s ;
+         animation-fill-mode: forwards;
+      }
+
+      @-webkit-keyframes kategori{
+          from{
+            background-size: 100% ;
+          }
+          to{
+            background-size: 120% ;
+          }
+
+          0%{ background-size: 100%;}
+      }
+
+      @keyframes kategori{
+        from{
+            background-size: 100% ;
+          }
+          to{
+            background-size: 120% ;
+          }
+      }
+      #grid-2{
+        display: grid;
+        /* grid-template-columns: 1fr repeat(2,minmax(auto, 30em)) 1fr; */
+        grid-template-columns:  repeat(1,minmax(auto,70em)) ;
+      }
+    
+
+/*footer*/
+      .footer a{
+        text-decoration: none;
+        color:rgb(172, 172, 172);
+        padding:0;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+      }
+      footer{
+        width: 100%;
+        text-align: center;
+        background-color: rgb(19, 19, 19);
+        padding-top: 1em;
+        padding-bottom: 1em;
+        margin-top: 2em;
+      }
+      footer li{
+        display: inline-block;
+        margin-left: 0.3em;
+        margin-right: 0.3em;
+        background-color:transparent;
+        padding: 0;
+      }
+
+      /*produk pilhan*/
+      .produk-pilihan-tittle{
+        text-align: center;
+        font-family: Arial, Helvetica, sans-serif;
+        color: #fff;
+      }
+
+      /*product card*/
+      .atas-product-card{
+        width: 100%;
+        justify-content: center;
+        display:grid;
+        grid-gap: 1em;
+        overflow: hidden;
+      }
+      .product-card{
+        width: 300px;
+        height: 400px;
+        background: rgba(0, 0, 0, 0.383);
+        padding: 0%;
+        text-align: center;
+        color: #fff;
+        font-family: Arial, Helvetica, sans-serif;
+        margin: 0 0.5em 0 0.5em;
+      }
+      .product-card img{
+        width: 100%;
+        height: 55%;
+        background:   #000;
+      }
+
+      .product-card h3,h4,h5{
+        padding: 0;
+        margin: 0;
+      }
+
+      .button-buy{
+        text-decoration: none;
+        color: #fff;
+        padding: 0.5em 1.5em;
+        border: 2px solid #fff;
+        border-radius: 20px;
+      }
+
+      .button-buy:hover{
+        color: rgb(255, 255, 255);
+        background: rgb(0,152,65);
+        border: 2px solid transparent;
+      }
+
+      .judul,.harga,.deskripsi,.button-buy-product{
+        width: 100%;
+        height: 10%;
+      }
+
+      /*kata orang*/
+      .kata-orang{
+        margin: 3em 0 3em 0;
+        display: flex;
+        justify-content: center;
+        color: #fff;
+        font-family: Arial, Helvetica, sans-serif;
+        height: 400px;
+        background: url('../assets/farmbg.jpg');
+        background-size: 300%;
+      }
+      .kata-orang-bglayer{
+        width: 100%;
+        height: 100%;
+        background: rgba(33, 33, 33, 0.521);
+        text-align: center;
+        padding: 0.3em;
+      }
+
+
+      .testimoni-avatar img{
+        border-radius: 100%;
+        width: 150px;
+        height: 150px;
+      }
+
+      .testimoni p{
+        margin: 0;
+        padding: 0;
+      }
+      /*bagian keunggulan*/
+    
+      .keunggulan > .keunggulan-macam > img{
+          width: 110px;
+          height: 110px;
+      }
+      .keunggulan >.keunggulan-macam{
+        padding: 0;
+        margin: 0;
+          text-align: center;
+          color: #fff;
+          font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+          font-size: 15px;
+      }
+
+      /*media start*/
+
+@media(min-width:481px){
+    .logo{
+        padding: 0 0 0 50px;
+    }
+    .profilebtn{
+        padding: 10px  50px 10px 10px ;
+    }
+  
+
+    .promosi-area ul{
+        grid-column: 2/4;
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .card-content-2{
+      padding: 1.5em;
+      background-color: rgb(0,152,65);
+      text-align: center;
+      width: 17em;
+    }
+      /*menambahkan margin untuk komten kategori */
+      .card-content-4,.card-content-5,.card-content-6{
+        margin: 0.5em;
+      }
+
+    .card-content-3{
+      margin: 0.5em 0.5em 0.5em 0;
+    }
+   
+    .card-content-3 p,
+    .card-content-4 p,
+    .card-content-5 p,
+    .card-content-6 p{
+          color: #fff;
+          padding-top:190px ;
+          font-weight: bold;
+          font-size: 20px;
+          text-shadow: 1px 3px #000;
+          font-family: Arial, Helvetica, sans-serif;
+    }
+    #grid-2{
+      display: grid;
+      /* grid-template-columns: 1fr repeat(2,minmax(auto, 30em)) 1fr; */
+      grid-template-columns:  repeat(2,minmax(auto,70em)) ;
+    }
+
+    #grid{
+      display: grid;
+       grid-template-columns: 1fr repeat(2,minmax(auto, 20em)) 1fr; 
+    }
+  
+    .kata-orang{
+      background-size: 150%;
+    }
+
+    .testimoni-avatar img{
+      width: 200px;
+      height: 200px;
+    }
+    }
+    
+
+ 
+  
+
+  
+
+
+@media (max-width:480px){
+   
+       #grid-2{
+        display: grid;
+        /* grid-template-columns: 1fr repeat(2,minmax(auto, 30em)) 1fr; */
+        grid-template-columns:  repeat(1,minmax(auto,70em)) ;
+      }
+   
+
+      .card-content-3 p,
+      .card-content-4 p,
+      .card-content-5 p,
+      .card-content-6 p{
+            color: #fff;
+            padding-top:190px ;
+            font-weight: bold;
+            font-size: 30px;
+            font-family: Arial, Helvetica, sans-serif;
+            text-shadow: 1px 3px #000;
+      }
+    }
+
+    @media(min-width:600px){
+      #grid-3{
+        display: grid;
+        /* grid-template-columns: 1fr repeat(2,minmax(auto, 30em)) 1fr; */
+        grid-template-columns:  repeat(2,minmax(200px,20em)) ;
+        
+      }
+      .kata-orang{
+        background-size: 100%;
+      }
+
+      .keunggulan{
+        display: flex;
+        justify-content: space-around;
+      }
+    }
+    @media(max-width:600px){
+    
+    }
+
+    @media(min-width:800px){
+      .banner-big img{
+        width: 100%;
+       }
+       .banner-small img{
+        display: none;
+    
+       }
+       #grid-3{
+        display: grid;
+        /* grid-template-columns: 1fr repeat(2,minmax(auto, 30em)) 1fr; */
+        grid-template-columns:  repeat(2,minmax(200px,20em)) ;
+        
+      }
+    }
+
+    @media(max-width:800px){
+      .banner-big img{
+        width: 100%;
+       display: none;
+       }
+    }
+
+    @media (min-width: 924px){
+      #grid-2{
+        display: grid;
+        /* grid-template-columns: 1fr repeat(2,minmax(auto, 30em)) 1fr; */
+        grid-template-columns:  repeat(4,minmax(auto,70em)) ;
+      }
+      .banner-big img{
+        width: 100%;
+       }
+       .banner-small img{
+        display: none;
+    
+       }
+       #grid-3{
+        display: grid;
+        /* grid-template-columns: 1fr repeat(2,minmax(auto, 30em)) 1fr; */
+        grid-template-columns:  repeat(3,minmax(200px,20em)) ;
+        
+      }
+    }
+
+    
+      
+       
